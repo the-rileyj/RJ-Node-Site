@@ -1,0 +1,182 @@
+doctype html
+html
+    head
+        title="RJ's Site"
+        link(rel='shortcut icon', type='image/png', href='images/favicon.ico')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css', integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ', crossorigin='anonymous')
+        script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js', integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n', crossorigin='anonymous')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', integrity='sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb', crossorigin='anonymous')
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn', crossorigin='anonymous')
+        link(rel='stylesheet', href='stylesheets/style.css')
+        link(href="https://fonts.googleapis.com/css?family=Oswald", type="text/css", rel="stylesheet")
+    body
+        nav.navbar.navbar-toggleable-md.fixed-top.rj-header
+            button.navbar-toggler.navbar-toggler-right.ham(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            a.navbar-brand(href='#Home').home
+                |RJ
+            #navbarNav.collapse.navbar-collapse
+                ul.navbar-nav
+                    li.nav-item
+                        a.nav-link(href='#About')
+                            |About
+                    li.nav-item
+                        a.nav-link(href='#Contact')
+                            |Contact
+                    li.nav-item
+                        a.nav-link(href='#Works')
+                            |Works
+                ul.navbar-nav.ml-auto
+                    h6.nav-link(href='#').views
+                        |Number of Views: #{ num }, Unique: #{ uniq }
+        div.spacer(id="Home")
+        div.container-fluid.pic-container
+            div.row
+                div.col-sm-3
+                div.col-sm-6
+                    div.parallax.main-img1
+                div.col-sm-3
+            div.row
+                div.col-sm-3
+                div.col-sm-6
+                    div.in-between
+                        p.in-between
+                            |Welcome to RJ's Site
+                div.col-sm-3
+            div.row
+                div.col-sm-3
+                div.col-sm-6
+                    div.parallax.main-img2
+                div.col-sm-3
+        div.container-fluid.about(id="About")
+            div.row
+                div.col-sm-1
+                div.col-sm-10
+                    h1.title-text
+                        | About Riley
+                    hr.light
+                div.col-sm-1
+            div.row
+                div.col-sm-1
+                div.col-sm-4
+                    img.about-pic.img-fluid(src="images/rj_with_kramer_snip.jpg" alt="RJ with CEO of Omnibyte and Congressman Kevin Kramer")
+                    p.pic-descriptor
+                        |RJ with CEO of OmniByte Ray Berry and ND Congressman Kevin Kramer, respectively
+                div.col-sm-6
+                    p.about-text
+                        |Riley Johnson is a young American nationalist, actively keeping up with the newest in cryptocurrency, computing, and programming.
+                        |Speaking of which, Riley's ever expanding repertoire of programming and scripting languages he knows currently includes: Go,
+                        |Python, C, C#, VB.net, SQL, Java, HTML, CSS, Javascript (including jQuery, Node.js, Vue, and Angular 2), Batch, and
+                        |Shell. Though Riley is actively programming more than anything else, he is also knowledgeable in current networking
+                        |practices in terms of implementation, expandability, and especially safety. In his free time, Riley tries to program as much as
+                        |possible, but when out of fresh ideas, he can usually be found reading economic and programming books, watching movies, or
+                        |trading crypto.
+                div.col-sm-1
+        div.container-fluid.contact(id="Contact")
+            div.row
+                div.col-sm-1
+                div.col-sm-10
+                    h1.title-text
+                        |Contact Riley
+                    hr.light
+                    //p.contact-text
+                        //|Contact me
+                div.col-sm-1
+            div.row.media-icons
+                div.col-sm-1
+                div.col-sm-10
+                    a#email(href="mailto:rj@therileyjohnson.com" target="_blank")
+                        img.center(src="images/email.png" alt="email")
+                    a#email2(href="mailto:rj@therileyjohnson.com" target="_blank")
+                        p.email.center
+                            |rj@therileyjohnson.com
+                div.col-sm-1
+            div.row.media-icons
+                div.col-sm-1
+                div.col-sm-5
+                    a#linkedin(href="https://www.linkedin.com/in/riley-johnson-84297213a/" target="_blank")
+                        img.center(src="images/linkedin.png" alt="linkedin")
+                div.col-sm-5
+                    a#github(href="https://github.com/the-rileyj" target="_blank")
+                        img.center(src="images/github.png" alt="github")
+                div.col-sm-1
+            div.row.media-icons
+                div.col-sm-1
+                div.col-sm-5
+                    a#reddit(href="https://www.reddit.com/user/therileyjohnson/" target="_blank")
+                        img.center(src="images/reddit.png" alt="reddit")
+                div.col-sm-5
+                    a#instagram(href="https://www.instagram.com/rj_theplug/" target="_blank")
+                        img.center(src="images/instagram.png" alt="instagram")
+                div.col-sm-1
+            div.row.media-icons
+                div.col-sm-1
+                div.col-sm-5
+                    a#twitter(href="https://twitter.com/rileywub" target="_blank")
+                        img.center(src="images/twitter.png" alt="twitter")
+                div.col-sm-5
+                    a#facebook(href="https://www.facebook.com/riley.johnson.7121614" target="_blank")
+                        img.center(src="images/facebook.png" alt="facebook")
+                div.col-sm-1
+            div.row.media-icons
+                div.col-sm-1
+                div.col-sm-10
+                    img.img-fluid.center(src="images/" + jcash + ".png" alt="snapcode")
+                div.col-sm-1
+        div.container-fluid.works(id="Works")
+            div.row.works-row
+                div.col-sm-1
+                div.col-sm-10.heading
+                    h1.title-text
+                        |Work by Riley
+                    hr.light
+                div.col-sm-1
+            div.row.works-row
+                div.col-sm-1
+                div.col-sm-4
+                    h2.works-descriptor
+                        |RJ's Resume
+                div.col-sm-6(style="padding-left: 0")
+                    a.works-text(href='/files/pdf/rjResume.pdf', download)
+                        |Download
+                div.col-sm-1
+            div.row
+                div.col-sm-1
+                div.col-sm-4
+                    h2.works-descriptor
+                        |Kimbo Slice Tribute
+                div.col-sm-6.embed-responsive.embed-responsive-16by9
+                    iframe(src='https://www.youtube.com/embed/_7mr2wypMG0', frameborder='0', allowfullscreen='')
+                div.col-sm-1
+            div.row
+                div.col-sm-1
+                div.col-sm-10.heading
+                    hr.light
+                    h1.warning-text
+                        |More to Come Soon...
+                div.col-sm-1
+        div.container-fluid.footer
+            div.row
+                div.col-sm-3
+                div.col-sm-3
+                    p.footer-title
+                        |Contact Information:
+                    p.footer-sub
+                        |rj@therileyjohnson.com
+                    p.footer-sub
+                        a(href="#Contact")
+                            |More
+                div.col-sm-3
+                    p.footer-title
+                        |Donate:
+                    p.footer-sub
+                        |Bitcoin: 1QAwndUy9prT9innrRuDBxMMKkSzA9vYQr
+                    p.footer-sub
+                        |Ethereum: 0xda1b7748d1A7A8b97175B66659469CE4794Eb6eb
+                    p.footer-sub
+                        | Z-Cash: t1fxQT8nzC8bbo9yzjgcs5w5DAZEw6LD8HQ
+                div.col-sm-3
+        //div.super-spacer
+        block content
+
